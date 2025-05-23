@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FirstFlight Travels - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+        <i class="bi bi-globe2 me-2"></i> FirstFlight Travels
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="hotels.html">Hotels</a></li>
+          <li class="nav-item"><a class="nav-link" href="explore.html">Explore Places</a></li>
+          <li class="nav-item"><a class="nav-link" href="adventure.html">Adventure</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <a href="booking.html" class="btn btn-warning ms-lg-3 fw-bold shadow-sm">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel Banner -->
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-touch="true" data-bs-interval="3000">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/pink-suitcase-with-hat-globe-it.jpg" class="d-block w-100" alt="Banner 1">
+        <div class="carousel-caption">
+          <h2>Discover the world with us</h2>
+          <p>Unforgettable tours curated by locals</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/3d-icon-traveling-vacation.jpg" class="d-block w-100" alt="Banner 2">
+        <div class="carousel-caption">
+          <h2>Explore breathtaking landscapes</h2>
+          <p>From mountains to beaches and beyond</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/flat-lay-map-hat-wooden-table.jpg" class="d-block w-100" alt="Banner 3">
+        <div class="carousel-caption">
+          <h2>Top-rated travel experiences</h2>
+          <p>Trusted by thousands of adventurers</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Categories Section -->
+  <section class="categories py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Browse by Category</h2>
+      <div class="row justify-content-center g-4">
+        <div class="col-6 col-md-4">
+          <a href="hotels.html" class="category-card text-center p-4 d-block h-100 shadow-sm rounded-4">
+            <div class="display-5 mb-2 text-success"><i class="bi bi-building"></i></div>
+            <h5 class="fw-semibold">Hotels</h5>
+            <div class="text-muted small">Top-rated hotels for all budgets</div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4">
+          <a href="explore.html" class="category-card text-center p-4 d-block h-100 shadow-sm rounded-4">
+            <div class="display-5 mb-2 text-primary"><i class="bi bi-geo-alt"></i></div>
+            <h5 class="fw-semibold">Explore Places</h5>
+            <div class="text-muted small">Tours & destinations together</div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4">
+          <a href="adventure.html" class="category-card text-center p-4 d-block h-100 shadow-sm rounded-4">
+            <div class="display-5 mb-2 text-danger"><i class="bi bi-compass"></i></div>
+            <h5 class="fw-semibold">Adventure</h5>
+            <div class="text-muted small">For thrill-seekers & explorers</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Top Picks For You (No Tabs, Three Rows) -->
+  <section class="top-picks py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Top Picks For You</h2>
+      <!-- Hotels Row -->
+      <h4 class="fw-semibold mb-4 text-success">Hotels</h4>
+      <div class="row g-4 mb-5">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="images/hotelparis.jpg" class="card-img-top" alt="Hotel de Paris">
+            <div class="card-body">
+              <h5 class="card-title">Hotel de Paris</h5>
+              <p class="card-text">A luxury stay in the heart of Paris. Enjoy stunning city views and premium comfort.</p>
+              <a href="parishotel.html" class="btn btn-outline-success btn-sm">View Hotel</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="images/hoteljapan.png" class="card-img-top" alt="Imperial Hotel">
+            <div class="card-body">
+              <h5 class="card-title">Imperial Hotel</h5>
+              <p class="card-text">Comfort and convenience in the vibrant center of Tokyo.</p>
+              <a href="tokyohotel.html" class="btn btn-outline-success btn-sm">View Hotel</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="images/hotellondon.png" class="card-img-top" alt="Elegant hotel building with grand entrance and decorative lights, set in a bustling London city environment, representing Mandarin Oriental Hotel">
+            <div class="card-body">
+              <h5 class="card-title">Mandarin Oriental Hotel</h5>
+              <p class="card-text">Experience royalty in London’s iconic luxury hotel.</p>
+              <a href="londonhotel.html" class="btn btn-outline-success btn-sm">View Hotel</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Explore Places Row -->
+      <h4 class="fw-semibold mb-4 text-primary">Explore Places</h4>
+      <div class="row g-4 mb-5">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="images/paris__france.jpg" class="card-img-top" alt="Paris, France">
+            <div class="card-body">
+              <h5 class="card-title">Paris, France</h5>
+              <p class="card-text">Cruise the Seine, Eiffel Tower, and cafés. Classic city tours.</p>
+              <a href="paris.html" class="btn btn-outline-primary btn-sm">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="images/tokyo.png" class="card-img-top" alt="Tokyo, Japan">
+            <div class="card-body">
+              <h5 class="card-title">Tokyo, Japan</h5>
+              <p class="card-text">Temples, sushi, and neon lights in Tokyo. Urban adventure awaits.</p>
+              <a href="tokyo.html" class="btn btn-outline-primary btn-sm">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="images/angkor.jpg" class="card-img-top" alt="Siem Reap, Cambodia">
+            <div class="card-body">
+              <h5 class="card-title">Siem Reap, Cambodia</h5>
+              <p class="card-text">Explore the ancient temples of Angkor Wat and rich culture.</p>
+              <a href="siemreap.html" class="btn btn-outline-primary btn-sm">Explore</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Adventure Row -->
+      <h4 class="fw-semibold mb-4 text-danger">Adventure</h4>
+      <div class="row g-4 mb-5">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="images/hiking.jpg" class="card-img-top" alt="Mountain Hiking">
+            <div class="card-body">
+              <h5 class="card-title">Mountain Hiking</h5>
+              <p class="card-text">Climb breathtaking peaks with our expert local guides.</p>
+              <a href="hiking.html" class="btn btn-outline-danger btn-sm">Adventure Awaits</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="images/jungle.jpg" class="card-img-top" alt="Jungle Safari">
+            <div class="card-body">
+              <h5 class="card-title">African Safari</h5>
+              <p class="card-text">Wildlife expeditions and nature encounters in exotic jungles.</p>
+              <a href="safari.html" class="btn btn-outline-danger btn-sm">Adventure Awaits</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="images/balidiving.png" class="card-img-top" alt="Scuba Diving Bali">
+            <div class="card-body">
+              <h5 class="card-title">Scuba Diving Bali</h5>
+              <p class="card-text">Discover vibrant reefs and marine life in Bali’s clear waters.</p>
+              <a href="scuba.html" class="btn btn-outline-danger btn-sm">Adventure Awaits</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section (Simple, Smaller) -->
+  <section class="testimonials-simple bg-light py-3">
+    <div class="container">
+      <div class="text-center mb-2">
+        <h4 class="fw-bold fs-6 mb-2">What Our Customers Say</h4>
+      </div>
+      <div class="row justify-content-center g-2">
+        <div class="col-md-4 col-12">
+          <blockquote class="blockquote small mb-1 text-center">
+            <span class="bi bi-quote fs-5 text-success"></span>
+            "FirstFlight made my honeymoon in Paris unforgettable!"
+          </blockquote>
+          <div class="testimonial-author text-muted text-center mb-2">– Sokly Chan, Cambodia</div>
+        </div>
+        <div class="col-md-4 col-12">
+          <blockquote class="blockquote small mb-1 text-center">
+            <span class="bi bi-quote fs-5 text-success"></span>
+            "Our Dubai trip was well organized and memorable."
+          </blockquote>
+          <div class="testimonial-author text-muted text-center mb-2">– Lina Torres, USA</div>
+        </div>
+        <div class="col-md-4 col-12">
+          <blockquote class="blockquote small mb-1 text-center">
+            <span class="bi bi-quote fs-5 text-success"></span>
+            Amazing experience in Tokyo! Loved the guides.
+          </blockquote>
+          <div class="testimonial-author text-muted text-center mb-2">– Haruto Saito, Japan</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter py-3 bg-success text-white">
+  <div class="container">
+    <form action="#" method="post" class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+      <span class="fw-semibold me-2" style="font-size:1.1rem;">Stay in touch:</span>
+      <input type="email" name="email" class="form-control w-auto rounded-pill" style="min-width:180px;max-width:240px;font-size:1rem;" placeholder="Your email" required>
+      <button type="submit" class="btn btn-light px-3 rounded-pill text-success fw-bold" style="font-size:1rem;">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+
+  <footer class="bg-dark text-white pt-3 pb-2">
+  <div class="container text-center">
+    <div class="small mb-1">
+      <span>Have questions?</span>
+      <a href="mailto:info@firstflight.com" class="text-white text-decoration-underline">info@firstflight.com</a>
+    </div>
+    <div class="footer-links mb-2 small">
+      <a href="privacy.html" class="text-white me-2">Privacy Policy</a>|
+      <a href="terms.html" class="text-white mx-2">Terms of Service</a>|
+      <a href="about.html" class="text-white mx-2">About</a>|
+      <a href="contact.html" class="text-white ms-2">Contact</a>
+    </div>
+    <div class="footer-social mb-2">
+      <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+    </div>
+    <div class="small text-secondary mb-1">&copy; 2025 FirstFlight Travels. All rights reserved.</div>
+  </div>
+</footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
