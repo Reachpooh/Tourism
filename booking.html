@@ -10,15 +10,10 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm sticky-top">
     <div class="container">
-      <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
-        <i class="bi bi-globe2 me-2"></i> FirstFlight Travels
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html"><i class="bi bi-globe2 me-2"></i> FirstFlight Travels</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -32,76 +27,26 @@
       </div>
     </div>
   </nav>
-
-  <!-- Breadcrumb -->
-  <div class="container mt-3">
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Book Your Trip</li>
-      </ol>
-    </nav>
-  </div>
-
-  <!-- Booking Section (fills the page, keeps footer down) -->
+  <div class="container mt-3"><nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html">Home</a></li><li class="breadcrumb-item active" aria-current="page">Book Your Trip</li></ol></nav></div>
   <section class="flex-grow-1 d-flex align-items-center justify-content-center">
     <div class="w-100" style="max-width:700px;">
-      <!-- Booking Form -->
       <div class="booking-form-box bg-light rounded-4 shadow-sm p-4">
         <h1 class="fw-bold text-success mb-3 text-center"><i class="bi bi-calendar2-check me-2"></i>Book Your Trip</h1>
         <form id="bookingForm">
           <div class="row g-3">
-            <div class="col-md-6">
-              <label for="name" class="form-label fw-semibold">Full Name</label>
-              <input type="text" class="form-control rounded-pill" id="name" required>
-            </div>
-            <div class="col-md-6">
-              <label for="email" class="form-label fw-semibold">Email</label>
-              <input type="email" class="form-control rounded-pill" id="email" required>
-            </div>
-            <div class="col-md-6">
-              <label for="phone" class="form-label fw-semibold">Phone Number</label>
-              <input type="tel" class="form-control rounded-pill" id="phone" required>
-            </div>
-            <div class="col-md-6">
-              <label for="destination" class="form-label fw-semibold">Destination</label>
-              <select class="form-select rounded-pill" id="destination" required>
-                <option selected disabled value="">Choose...</option>
-                <option value="Paris">Paris</option>
-                <option value="London">London</option>
-                <option value="Bali">Bali</option>
-                <option value="Dubai">Dubai</option>
-                <option value="Siem Reap">Siem Reap</option>
-                <option value="New York">New York</option>
-                <option value="Mountain Hiking">Mountain Hiking</option>
-                <option value="Scuba Diving">Scuba Diving</option>
-                <option value="African Safari">African Safari</option>
-                <option value="Skydiving">Skydiving</option>
-                <option value="Zip Lining">Zip Lining</option>
-                <option value="Kayaking">Kayaking</option>
-                <option value="Hot Air Balloon">Hot Air Balloon</option>
-                <option value="White Water Rafting">White Water Rafting</option>
-              </select>
-            </div>
-            <div class="col-md-6">
-              <label for="checkin" class="form-label fw-semibold">Check-in / Start Date</label>
-              <input type="date" class="form-control rounded-pill" id="checkin" required>
-            </div>
-            <div class="col-md-6">
-              <label for="checkout" class="form-label fw-semibold">Check-out / End Date</label>
-              <input type="date" class="form-control rounded-pill" id="checkout" required>
-            </div>
-            <div class="col-12">
-              <label for="message" class="form-label fw-semibold">Special Requests</label>
-              <textarea class="form-control rounded-4" id="message" rows="3" placeholder="Tell us about any special requirements (optional)"></textarea>
-            </div>
-            <div class="col-12 text-center mt-3">
-              <button type="submit" class="btn btn-success btn-lg rounded-pill fw-bold px-5">Submit Booking</button>
-            </div>
+            <div class="col-md-6"><label for="name" class="form-label fw-semibold">Full Name</label><input type="text" class="form-control rounded-pill" id="name" required></div>
+            <div class="col-md-6"><label for="email" class="form-label fw-semibold">Email</label><input type="email" class="form-control rounded-pill" id="email" required></div>
+            <div class="col-md-6"><label for="phone" class="form-label fw-semibold">Phone Number</label><input type="tel" class="form-control rounded-pill" id="phone" required></div>
+            <div class="col-md-6"><label for="destination" class="form-label fw-semibold">Destination</label><select class="form-select rounded-pill" id="destination" required><option selected disabled value="">Choose...</option><option>Paris</option><option>London</option><option>Bali</option><option>Dubai</option><option>Siem Reap</option><option>New York</option><option>Mountain Hiking</option><option>Scuba Diving</option><option>African Safari</option><option>Skydiving</option><option>Zip Lining</option><option>Kayaking</option><option>Hot Air Balloon</option><option>White Water Rafting</option></select></div>
+            <div class="col-md-6"><label for="travelers" class="form-label fw-semibold">Number of Travelers</label><input type="number" class="form-control rounded-pill" id="travelers" min="1" max="50" placeholder="e.g. 2" required></div>
+            <div class="col-md-6"><label for="triptype" class="form-label fw-semibold">Trip Type</label><select class="form-select rounded-pill" id="triptype" required><option selected disabled value="">Choose...</option><option>Solo</option><option>Couple / Honeymoon</option><option>Family</option><option>Group / Friends</option></select></div>
+            <div class="col-md-6"><label for="checkin" class="form-label fw-semibold">Check-in / Start Date</label><input type="date" class="form-control rounded-pill" id="checkin" required></div>
+            <div class="col-md-6"><label for="checkout" class="form-label fw-semibold">Check-out / End Date</label><input type="date" class="form-control rounded-pill" id="checkout" required></div>
+            <div class="col-12"><label for="message" class="form-label fw-semibold">Special Requests</label><textarea class="form-control rounded-4" id="message" rows="3" placeholder="Tell us about any special requirements (optional)"></textarea></div>
+            <div class="col-12 text-center mt-3"><button type="submit" class="btn btn-success btn-lg rounded-pill fw-bold px-5">Submit Booking</button></div>
           </div>
         </form>
       </div>
-      <!-- Success Message -->
       <div class="booking-success-message text-center p-4 bg-light rounded-4 shadow-sm mt-4" style="display:none;">
         <div class="fs-1 text-success mb-2"><i class="bi bi-check2-circle"></i></div>
         <h2 class="fw-bold text-success mb-3">Thank You for Booking!</h2>
@@ -110,49 +55,11 @@
       </div>
     </div>
   </section>
-
-  <!-- Newsletter Subscription -->
-  <section class="newsletter py-3 bg-success text-white">
-    <div class="container">
-      <form action="#" method="post" class="d-flex flex-wrap justify-content-center align-items-center gap-2">
-        <span class="fw-semibold me-2" style="font-size:1.1rem;">Stay in touch:</span>
-        <input type="email" name="email" class="form-control w-auto rounded-pill" style="min-width:180px;max-width:240px;font-size:1rem;" placeholder="Your email" required>
-        <button type="submit" class="btn btn-light px-3 rounded-pill text-success fw-bold" style="font-size:1rem;">Subscribe</button>
-      </form>
-    </div>
-  </section>
-
-  <footer class="bg-dark text-white pt-3 pb-2">
-    <div class="container text-center">
-      <div class="small mb-1">
-        <span>Have questions?</span>
-        <a href="mailto:info@firstflight.com" class="text-white text-decoration-underline">info@firstflight.com</a>
-      </div>
-      <div class="footer-links mb-2 small">
-        <a href="privacy.html" class="text-white me-2">Privacy Policy</a>|
-        <a href="terms.html" class="text-white mx-2">Terms of Service</a>|
-        <a href="about.html" class="text-white mx-2">About</a>|
-        <a href="contact.html" class="text-white ms-2">Contact</a>
-      </div>
-      <div class="footer-social mb-2">
-        <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
-      </div>
-      <div class="small text-secondary mb-1">&copy; 2025 FirstFlight Travels. All rights reserved.</div>
-    </div>
-  </footer>
-
-  <!-- Bootstrap JS & Success Message Script -->
+  <section class="newsletter py-3 bg-success text-white"><div class="container"><form action="#" method="post" class="d-flex flex-wrap justify-content-center align-items-center gap-2"><span class="fw-semibold me-2" style="font-size:1.1rem;">Stay in touch:</span><input type="email" name="email" class="form-control w-auto rounded-pill" style="min-width:180px;max-width:240px;font-size:1rem;" placeholder="Your email" required><button type="submit" class="btn btn-light px-3 rounded-pill text-success fw-bold" style="font-size:1rem;">Subscribe</button></form></div></section>
+  <footer class="bg-dark text-white pt-3 pb-2"><div class="container text-center"><div class="small mb-1"><span>Have questions?</span> <a href="mailto:info@firstflight.com" class="text-white text-decoration-underline">info@firstflight.com</a></div><div class="footer-links mb-2 small"><a href="privacy.html" class="text-white me-2">Privacy Policy</a>|<a href="terms.html" class="text-white mx-2">Terms of Service</a>|<a href="about.html" class="text-white mx-2">About</a>|<a href="contact.html" class="text-white ms-2">Contact</a></div><div class="footer-social mb-2"><a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a><a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a><a href="#" class="text-white"><i class="bi bi-twitter"></i></a></div><div class="small text-secondary mb-1">&copy; 2025 FirstFlight Travels. All rights reserved.</div></div></footer>
+  <button id="scrollTopBtn" title="Back to top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.getElementById('bookingForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      document.querySelector('.booking-form-box').style.display = 'none';
-      document.querySelector('.booking-success-message').style.display = 'block';
-      // Scroll to booking area
-      document.querySelector('.booking-success-message').scrollIntoView({behavior: 'smooth'});
-    });
-  </script>
+  <script>document.getElementById('bookingForm').addEventListener('submit', function(e) { e.preventDefault(); document.querySelector('.booking-form-box').style.display = 'none'; document.querySelector('.booking-success-message').style.display = 'block'; document.querySelector('.booking-success-message').scrollIntoView({behavior: 'smooth'}); });</script>
+  <script>const scrollBtn = document.getElementById('scrollTopBtn'); window.addEventListener('scroll', () => { scrollBtn.classList.toggle('show', window.scrollY > 300); }); scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));</script>
 </body>
 </html>
